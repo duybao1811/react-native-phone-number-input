@@ -37,10 +37,6 @@ const App = () => {
             defaultCode="IN"
             layout="first"
             onChangeText={(text) => {
-              if (countryCode === 'VN') {
-                setValue(text.replace(/^0+/, ''));
-                return;
-              }
               setValue(text);
             }}
             onChangeFormattedText={(text) => {
